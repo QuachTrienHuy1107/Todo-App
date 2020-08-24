@@ -1,0 +1,119 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+}
+/*container*/
+.container{
+    margin: 0 auto;
+    padding: 10px;
+    width: 380px;
+}
+/*header*/
+.header{
+    position: relative;
+    width: 380px;
+    height: 150px;
+    background-image: url('https://imageshack.com/a/img923/9016/RKkp7f.jpg');
+    border-radius: 15px 15px 0 0;
+}
+.clear{
+    position: absolute;
+    font-size: 23px;
+    left: 350px;
+    color: aliceblue;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    font-size: 20px;
+    color: rgb(30, 30, 31);
+}
+
+/*content*/
+.content{
+    position: relative;
+    width: 380px;
+    height: 600px;
+    max-height: 450px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.item{
+    position: relative;
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    border-bottom: 1px solid rgb(160, 154, 154);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.complete{
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: -30px;
+    top: 10px;
+}
+.item p.text{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    left: 10px;
+    top: 5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.delete{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    right: 50px;
+    top: 5px;
+}
+/*Add-item*/
+.add-item{
+    position: absolute;
+    top: 400px;
+    width: 360px;
+    height: 40px;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  
+}
+.add-item i{
+    position: absolute;
+    font-size: 25px;
+}
+.add-item input{
+    position: absolute;
+    left: 50px;
+    width: 310px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+  
+}
+::placeholder{
+    opacity: 0.4 ;
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
